@@ -1,0 +1,12 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.title {
+    cursor: pointer;
+}
+  .navigation-container {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+  }

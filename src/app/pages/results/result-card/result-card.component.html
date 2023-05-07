@@ -1,0 +1,20 @@
+<div class="result-card-container" [matMenuTriggerFor]="menu">
+    <div class="result-card-container__wrapper">
+        <div class="result-card-container__wrapper__team-name">{{result.teamName}}</div>
+        <img [src]="result.teamImage" class="result-card-container__wrapper__team-image" height="50" width="50">
+        <div class="result-card-container__wrapper__team-points">{{result.teamPoints}}</div>
+    </div>
+    
+</div>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onDelete()">
+    <mat-icon>close</mat-icon>
+    <span>Törlés</span>
+    </button>
+
+    <button mat-menu-item (click)="onEdit()">
+        <mat-icon>edit</mat-icon>
+        <span>Módosít</span>
+    </button>
+</mat-menu>

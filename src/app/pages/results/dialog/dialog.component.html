@@ -1,0 +1,25 @@
+<div class="dialog-container">
+    <h1 mat-dialog-title>Csapat hozzáadása</h1>
+    <div mat-dialog-content class="dialog-container__content" [formGroup]="formGroup">
+        <mat-form-field appearance="fill">
+            <mat-label>Csapatnév</mat-label>
+            <input matInput formControlName="team_name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Pontszám</mat-label>
+            <input matInput formControlName="team_points">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Logó (URL)</mat-label>
+            <input matInput formControlName="team_image">
+        </mat-form-field>
+
+    </div>
+
+    <mat-dialog-actions>
+        <button mat-button (click)="onCancel()" class="cancel-btn">Mégse</button>
+        <button mat-button class="save-btn" (click)="onSave()">Mentés</button>
+      </mat-dialog-actions>
+</div>

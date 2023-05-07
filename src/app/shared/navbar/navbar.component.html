@@ -1,0 +1,15 @@
+<mat-toolbar>
+   <span class="title" (click)="navigateTo('home')">Főoldal</span>
+   <span class="example-spacer"></span>
+   <div class="navigation-container">
+    <button mat-button class="example-icon favorite-icon" (click)="navigateTo('overview')">
+        <span>Mindenkori</span>
+      </button>
+      <button mat-button class="example-icon favorite-icon" (click)="navigateTo('results')">
+       <span>Jelenlegi</span>
+     </button>
+     <button mat-button class="example-icon favorite-icon" (click)="navigateTo('statistics')">
+       <span>Rekordok</span>
+     </button>
+   </div>
+ </mat-toolbar>
